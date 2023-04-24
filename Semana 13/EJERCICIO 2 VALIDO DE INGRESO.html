@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    !-- link de sitio Sweetalert mensajes más elegantes-->
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+    <center>
+        <h1>VALIDACION DE INGRESOS SESION</h1>
+        <Script>
+            let datof;
+            let sw=0;
+            let clave=123;
+            //ciclo for
+            for(f=1;f<=3;f++){
+                datof=parseInt(prompt("ingrese contraseña ingreso"));
+                if(datof==clave){
+                swal("Estimado usuario","ACCESO PERMITIDO","succes");
+                document.write("ACCESO PERMITIDO");
+                sw=1;//variable sw=1 cuando ingrese con contraseña
+                break;
+                }
+            }
+            //variable sw ==0 cuando nunca ingresa con clave correcta
+            if (sw==0){
+                swal("estimado usuario","CUENTA BLOQUEADA","error");
+                document.write("CUENTA BLOQUEADA");
+            }
+        </Script>
+        </center>
+    
+</body>
+</html>
