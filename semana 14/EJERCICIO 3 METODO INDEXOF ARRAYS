@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentodo Indexof</title>
+</head>
+<body>
+    <center>
+        <img src="./IMG/incap.png" alt="" width="150" height="150">
+        <h1>METODO INDEX OF</h1>
+        <h2>BUSQUEDA DE ELEMENTOS EN ARRAY</h2>
+        <br><br>
+        <p>Estudiante se encuentra en el indice No.</p>
+        <p id="std"></p>
+        <script>
+            //creacion
+            let num;
+            let std=new Array();
+            //Captura
+            num=parseInt(prompt("Ingrese cantidad de STDs a guardar arrays"));
+            for (i=0;i<num;i++){
+                std[i]=prompt("Ingrese nombre STD a guardar");
+            }
+            //BUSQUEDA
+            let datob=prompt("Ingrese DATO STD A BUSCAR...");
+            let find=std.indexOf(datob.trim());
+            //Evaluar si se encuentra STD 0= VERDADERO -1=FALSO
+            if (find>-1){
+                document.getElementById("std").innerHTML=find+"&nbdp"+datob;
+            }else{
+                document.getElementById("std").innerHTML="ERROR STD NO ENCONTRDO"+ datob;
+            }
+    </script>
+    </center>
+</body>
+</html>
