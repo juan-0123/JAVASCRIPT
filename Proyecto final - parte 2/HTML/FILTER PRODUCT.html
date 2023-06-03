@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/FILTER PRODUCT.css">
+    <script src="/js/FILTER PRODUCT.js"></script>
+</head>
+<body>
+    <div class="col-xs-5 header-logo">
+        <br>
+        <a href="index.html"><img src="/img/LogoMakr-83WQiF (1).png" alt="" width="100" height="100" class="img-responsive logo"></a>
+    </div>
+    <!-- MAIN -->
+<div class="main">
+    <h1></h1>
+    <hr>
+    
+    <h2></h2>
+    
+    <div id="myBtnContainer">
+      <button class="btn active" onclick="filterSelection('all')"> Todos</button>
+      <button class="btn" onclick="filterSelection('computador')"> tuberias</button>
+      <button class="btn" onclick="filterSelection('productos')"> Llaves</button>
+      <button class="btn" onclick="filterSelection('cursos')"> Cables</button>
+    </div>
+    <div id="toggle"><!-- CAMBIO-->
+      <input type="checkbox" class="checkbox" id="chk" />
+      <label class="label" for="chk">
+        <i class="fas fa-sun"></i>
+        <i class="fas fa-moon"></i>
+        <div class="ball"></div>
+      </label>
+    </div>
+    <div class="row">
+      <div class="column computador">
+        <div class="content">
+         <a href="/HTML/IMAGEN ZOOM TUBERIA 1.html">
+         <img src="/img/tuberia.jpeg" alt="" style="width:250px;height:250px;"></a>
+          <h4>TUBERIA DE PVC </h4>
+          <p>Tenemos todo tipo de pulgadas</p>
+        </div>
+      </div>
+      <div class="column computador">
+        <div class="content">
+          <a href="/HTML/IMAGEN ZOOM TUBERIA 2.html">
+        <img src="/img/tuberias de hierro.webp" alt="" style="width:250px;height:250px;"></a>
+          <h4>TUBERIAS ACERADAS</h4>
+          <p>Apartir de 5 pulgadas</p>
+        </div>
+      </div>
+      <div class="column computador">
+        <div class="content">
+          <a href="/HTML/IMAGEN ZOOM TUBERIA 3.html"></a>
+        <img src="/img/tuberia acero de carbono.jpeg" alt="" style="width:250px;height:250px;">
+          <h4>TUBERIA DE ACERO INOXIDABLE</h4>
+          <p>Resistencia que no se corrobe con la humedad</p>
+        </div>
+      </div>
+      
+      <div class="column productos">
+        <div class="content">
+          <a href="/HTML/IMAGEN ZOOM LLAVES 1.html"></a>
+          <img src="/img/llaves maestras.jpeg" alt="" style="width:250px;height:250px;">
+          <h4>LLAVES MAESTRAS</h4>
+          <p>resistente y se acopla a varios tamaños</p>
+        </div>
+      </div>
+      <div class="column productos">
+        <div class="content">
+          <a href="/HTML/IMAGEN ZOOM LLAVES 2.html"></a>
+        <img src="/img/llave de boca fija.jpeg" style="width:250px;height:250px;">
+          <h4>LLAVE DE BOCA FIJA</h4>
+          <p>traen un tamaño estander</p>
+        </div>
+      </div>
+      <div class="column productos">
+        <div class="content">
+          <a href="/HTML/IMAGEN ZOOM LLAVES 3.html"></a>
+        <img src="/img/llave de estrella.jpeg" alt="" style="width:250px;height:250px;">
+          <h4>LLAVE DE ESTRELLA</h4>
+          <p>Desenroca turcas y tornillos</p>
+        </div>
+      </div>
+      <div class="column cursos">
+        <div class="content">
+          <a href="/HTML/IMAGEN ZOOM CABLES 1.html"></a>
+          <img src="/img/cables de control.png" alt="" style="width:250px;height:250px;">
+          <h4>CABLE DE CONTROL</h4>
+          <p>Trasnporta señales eltricas en forma de tencion</p>
+        </div>
+      </div>
+      <div class="column cursos">
+        <div class="content">
+          <a href="/HTML/IMAGEN ZOOM CABLES 2.html"></a>
+        <img src="/img/cables de instrumentacion.webp" alt="" style="width:250px;height:250px;">
+          <h4>CABLE DE INTRUMENTACION</h4>
+          <p>Trasnporta señales eletricas de baja pontencia</p>
+        </div>
+      </div>
+      <div class="column cursos">
+        <div class="content">
+          <a href="/HTML/IMAGEN ZOOM CABLES 3.html"></a>
+        <img src="/img/Cables DE Potencia.jpeg" alt="" style="width:250px;height:250px;">
+          <h4>CABLE DE PONTENCIA</h4>
+          <p>Trasnportan una gran cantidad de energia eletrica</p>
+        </div>
+      </div>
+    <!-- END GRID -->
+    </div>
+    
+    <!-- END MAIN -->
+    </div>
+    <script>
+    //  BOTÓN TOGGLE SWITCHE
+    const chk = document.getElementById('chk');
+    
+    chk.addEventListener('change', () => {
+    document.body.classList.toggle('dark');
+    });
+    </script>
+</body>
+</html>
